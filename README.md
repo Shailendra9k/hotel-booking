@@ -10,6 +10,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - React router for routing
 - React context APIs for our state management
 - Contentfull for managing data
+- React icons
 - Netlify to host our application
 `
 
