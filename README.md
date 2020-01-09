@@ -6,10 +6,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 `The application provides booking of rooms in resort based on customer preference where they can choose on the basis of price, room type and other preferences. The customers can also get different services offered in the resort.`
 
 ## `Technologies used`
-`React router for routing
-React context APIs for our state management
-Contentfull for managing data
-Netlify to host our application
+`
+- React router for routing
+- React context APIs for our state management
+- Contentfull for managing data
+- Netlify to host our application
 `
 
 In the project directory, you can run:
