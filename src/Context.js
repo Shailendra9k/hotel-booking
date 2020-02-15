@@ -1,13 +1,34 @@
 import React, { Component } from "react";
+import items from "./data";
 
 const RoomContext = React.createContext();
 // <RoomContext.Provider value={"hello"}
 
 class RoomProvider extends Component {
   state = {
-    greeting: "Hello",
-    name: "John"
+    rooms: [],
+    sortedRooms: [],
+    featuredRooms: [],
+    loading: true
   };
+  //getData
+
+  componentDidMount() {
+    let rooms = this.formatData(items);
+    console.log(rooms);
+  }
+
+  formatData(items) {
+    let tempItems = items.map(item => {
+      let id = item.sys.id;
+      let images = item.fields.images.map(images => images.fields.file.url);
+
+      let room = { ...item.fields, images, id };
+      return room;
+    });
+    return tempItems;
+  }
+
   render() {
     return (
       <>
